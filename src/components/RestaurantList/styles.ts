@@ -8,11 +8,10 @@ export const Container = styled.div`
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(472px, 1fr));
-  gap: 48px;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  width: 100%;
+  max-width: 100%;
 
   @media (max-width: ${breakpoints.desktop}) {
     grid-template-columns: 1fr 1fr;

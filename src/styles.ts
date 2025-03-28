@@ -14,7 +14,7 @@ export const breakpoints = {
   mobile: '430px'
 }
 export const GlobalCSS = createGlobalStyle`
-*{
+* {
   margin: 0;
   padding:0;
   box-sizing: border-box;
@@ -23,6 +23,8 @@ export const GlobalCSS = createGlobalStyle`
 }
 
 body{
+  overflow-x: hidden;
+  width: 100vw;
   background-color: ${cores.fundoClaro};
   color: ${cores.vermelho};
 }

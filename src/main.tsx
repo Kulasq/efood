@@ -14,5 +14,4 @@ root.render(
 
 reportWebVitals()
 
-// Adicione export vazio
 export {}

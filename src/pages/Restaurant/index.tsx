@@ -20,7 +20,7 @@ const RestaurantPage = ({ addToCart }: { addToCart: (item: any) => void }) => {
   return (
     <>
       <Banner restaurant={restaurant} />
-      <div className="container">
+      
   <ProductList>
     {restaurant.cardapio.map(product => (
       <Product
@@ -30,7 +30,7 @@ const RestaurantPage = ({ addToCart }: { addToCart: (item: any) => void }) => {
       />
     ))}
   </ProductList>
-</div>
+
     </>
   )
 }

@@ -3,12 +3,14 @@ import { breakpoints } from '../../styles'
 
 export const ProductList = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  margin-top: 56px;
-  margin-bottom: 120px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 56px 0 120px;
 
   @media (max-width: ${breakpoints.desktop}) {
+    padding: 0;
     grid-template-columns: repeat(2, 1fr);
   }
 

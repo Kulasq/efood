@@ -30,6 +30,11 @@ function App() {
 
   return (
     <BrowserRouter>
+    <div style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        minHeight: '100vh' 
+      }}>
       <Header 
         cartItemsCount={cartItems.length} 
         onCartClick={() => setIsCartOpen(true)}
@@ -55,6 +60,7 @@ function App() {
     setCartItems([])
   }}
 />
+</div>
     </BrowserRouter>
   )
 }

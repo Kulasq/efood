@@ -12,9 +12,7 @@ export const HeaderContainer = styled.header`
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
   }
 `
 

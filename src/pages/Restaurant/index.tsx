@@ -4,6 +4,7 @@ import Banner from '../../components/Banner'
 import Product from '../../components/Product'
 import { RestaurantType } from '../../types'
 import restaurantsData from '../../data/restaurants.json'
+import { ProductList } from './styles'
 
 const RestaurantPage = ({ addToCart }: { addToCart: (item: any) => void }) => {
   const { id } = useParams()
@@ -20,16 +21,16 @@ const RestaurantPage = ({ addToCart }: { addToCart: (item: any) => void }) => {
     <>
       <Banner restaurant={restaurant} />
       <div className="container">
-        <div className="product-list">
-          {restaurant.cardapio.map(product => (
-            <Product
-              key={product.id}
-              onAdd={addToCart}
-              {...product}
-            />
-          ))}
-        </div>
-      </div>
+  <ProductList>
+    {restaurant.cardapio.map(product => (
+      <Product
+        key={product.id}
+        onAdd={addToCart}
+        {...product}
+      />
+    ))}
+  </ProductList>
+</div>
     </>
   )
 }

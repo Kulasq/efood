@@ -6,13 +6,15 @@ export const ProductContainer = styled.div`
   padding: 8px;
   color: ${cores.vermelho};
   max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 
   &:hover {
     cursor: pointer;
     transform: scale(1.02);
     transition: all 0.3s ease;
   }
-`
+  `
 
 export const ProductImage = styled.img`
   width: 100%;

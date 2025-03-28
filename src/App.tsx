@@ -16,6 +16,7 @@ export type CartItem = {
 function App() {
   const [cartItems, setCartItems] = useState<CartItem[]>([])
   const [isCartOpen, setIsCartOpen] = useState(false)
+  const [, setOrderId] = useState('')
 
   const addToCart = (item: CartItem) => {
     setCartItems([...cartItems, item])
@@ -25,6 +26,7 @@ function App() {
   const removeFromCart = (id: number) => {
     setCartItems(cartItems.filter(item => item.id !== id))
   }
+
 
   return (
     <BrowserRouter>
@@ -44,11 +46,15 @@ function App() {
       <Footer />
       
       <Cart
-        isOpen={isCartOpen}
-        items={cartItems}
-        onClose={() => setIsCartOpen(false)}
-        onRemove={removeFromCart}
-      />
+  isOpen={isCartOpen}
+  items={cartItems}
+  onClose={() => setIsCartOpen(false)}
+  onRemove={removeFromCart}
+  onFinish={(orderId: string) => {
+    setOrderId(orderId)
+    setCartItems([])
+  }}
+/>
     </BrowserRouter>
   )
 }

@@ -14,16 +14,22 @@ type Props = {
   }>
   onClose: () => void
   onRemove: (id: number) => void
+  onFinish: (orderId: string) => void
 }
 
-const Cart = ({ isOpen, items, onClose, onRemove }: Props) => {
-  const [step, setStep] = useState<'cart' | 'checkout' | 'confirmation'>('cart')
+const Cart = ({ isOpen, items, onClose, onRemove, onFinish }: Props) => {
+  const [step, setStep] = useState<'cart' | 'delivery' | 'payment' | 'confirmation'>('cart')
   const [orderId, setOrderId] = useState('')
   const total = items.reduce((acc, item) => acc + item.preco, 0)
 
   const handleFinishOrder = (orderId: string) => {
-    setOrderId(orderId)
-    setStep('confirmation')
+    if (orderId) {
+      onFinish(orderId)
+      setOrderId(orderId)
+      setStep('confirmation')
+    } else {
+      setStep('payment')
+    }
   }
 
   const handleClose = () => {
@@ -55,16 +61,18 @@ const Cart = ({ isOpen, items, onClose, onRemove }: Props) => {
               <span>{priceFormat(total)}</span>
             </S.TotalPrice>
 
-            <S.CheckoutButton onClick={() => setStep('checkout')}>
+            <S.CheckoutButton onClick={() => setStep('delivery')}>
               Continuar com a entrega
             </S.CheckoutButton>
           </>
         )}
 
-        {step === 'checkout' && (
+        {(step === 'delivery' || step === 'payment') && (
           <Checkout
+            step={step}
             totalPrice={total}
-            onClose={() => setStep('cart')}
+            onBack={() => step === 'delivery' ? setStep('cart') : setStep('delivery')}
+            onClose={handleClose}
             onFinish={handleFinishOrder}
           />
         )}

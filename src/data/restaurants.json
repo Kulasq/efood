@@ -1,20 +1,163 @@
 [
   {
     "id": 1,
-    "titulo": "Hioki Sushi",
+    "titulo": "Sabor Nordestino",
     "destacado": true,
-    "tipo": "Japonesa",
-    "avaliacao": 4.9,
-    "descricao": "Peça já o melhor da culinária japonesa!",
-    "capa": "/imgs/restaurantes/sushi.jpg",
+    "tipo": "Nordestina",
+    "avaliacao": 4.8,
+    "descricao": "Especializado em culinária típica do nordeste brasileiro.",
+    "capa": "/imgs/restaurantes/sabor_nordestino.jpg",
     "cardapio": [
       {
         "id": 1,
-        "nome": "Sushi Completo",
-        "descricao": "10 peças de sushi variados",
-        "foto": "/imgs/pratos/sushi-combo.jpg",
-        "preco": 189.90,
+        "nome": "Baião de Dois",
+        "descricao": "Arroz e feijão verde cozidos juntos com queijo coalho e carne seca.",
+        "foto": "/imgs/pratos/baiao_de_dois.jpg",
+        "preco": 25.90,
         "porcao": "2 pessoas"
+      },
+      {
+        "id": 2,
+        "nome": "Carne de Sol com Nata",
+        "descricao": "Carne de sol grelhada servida com nata e acompanhamentos.",
+        "foto": "/imgs/pratos/carne_de_sol_com_nata.jpg",
+        "preco": 32.50,
+        "porcao": "2 pessoas"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Cantina Italiana",
+    "destacado": false,
+    "tipo": "Italiana",
+    "avaliacao": 4.7,
+    "descricao": "Autêntica cozinha italiana com massas artesanais.",
+    "capa": "/imgs/restaurantes/cantina_italiana.jpg",
+    "cardapio": [
+      {
+        "id": 3,
+        "nome": "Spaghetti Carbonara",
+        "descricao": "Massa com molho cremoso de ovos, queijo parmesão e pancetta.",
+        "foto": "/imgs/pratos/spaghetti_carbonara.jpg",
+        "preco": 29.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 4,
+        "nome": "Lasagna alla Bolognese",
+        "descricao": "Camadas de massa intercaladas com molho bolonhesa e queijo.",
+        "foto": "/imgs/pratos/lasagna_bolognese.jpg",
+        "preco": 34.00,
+        "porcao": "2 pessoas"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Sushi Express",
+    "destacado": true,
+    "tipo": "Japonesa",
+    "avaliacao": 4.9,
+    "descricao": "O melhor da culinária japonesa com ingredientes frescos.",
+    "capa": "/imgs/restaurantes/sushi_express.jpg",
+    "cardapio": [
+      {
+        "id": 5,
+        "nome": "Combinado de Sushi",
+        "descricao": "12 peças de sushi e sashimi variados.",
+        "foto": "/imgs/pratos/combinado_sushi.jpg",
+        "preco": 42.90,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 6,
+        "nome": "Yakissoba",
+        "descricao": "Massa oriental com legumes e carne ao molho shoyu.",
+        "foto": "/imgs/pratos/yakissoba.jpg",
+        "preco": 27.90,
+        "porcao": "1 pessoa"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "La Pizzeria",
+    "destacado": false,
+    "tipo": "Pizza",
+    "avaliacao": 4.6,
+    "descricao": "Pizzas artesanais feitas com ingredientes de alta qualidade.",
+    "capa": "/imgs/restaurantes/la_pizzeria.jpg",
+    "cardapio": [
+      {
+        "id": 7,
+        "nome": "Pizza Margherita",
+        "descricao": "Molho de tomate, mussarela de búfala e manjericão.",
+        "foto": "/imgs/pratos/pizza_margherita.jpg",
+        "preco": 45.00,
+        "porcao": "4 pessoas"
+      },
+      {
+        "id": 8,
+        "nome": "Pizza Quatro Queijos",
+        "descricao": "Mussarela, gorgonzola, parmesão e provolone.",
+        "foto": "/imgs/pratos/pizza_quatro_queijos.jpg",
+        "preco": 49.90,
+        "porcao": "4 pessoas"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Burger House",
+    "destacado": true,
+    "tipo": "Hamburgueria",
+    "avaliacao": 4.8,
+    "descricao": "Hambúrgueres artesanais grelhados no fogo.",
+    "capa": "/imgs/restaurantes/burger_house.jpg",
+    "cardapio": [
+      {
+        "id": 9,
+        "nome": "Cheeseburger Clássico",
+        "descricao": "Pão, carne, queijo, alface, tomate e maionese da casa.",
+        "foto": "/imgs/pratos/cheeseburger.jpg",
+        "preco": 24.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 10,
+        "nome": "Barbecue Bacon Burger",
+        "descricao": "Hambúrguer artesanal com bacon e molho barbecue.",
+        "foto": "/imgs/pratos/barbecue_bacon_burger.jpg",
+        "preco": 29.90,
+        "porcao": "1 pessoa"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Doces & Cia",
+    "destacado": false,
+    "tipo": "Confeitaria",
+    "avaliacao": 4.7,
+    "descricao": "Os melhores doces e sobremesas para adoçar seu dia.",
+    "capa": "/imgs/restaurantes/doces_cia.jpg",
+    "cardapio": [
+      {
+        "id": 11,
+        "nome": "Bolo Red Velvet",
+        "descricao": "Massa aveludada vermelha com recheio de cream cheese.",
+        "foto": "/imgs/pratos/red_velvet.jpg",
+        "preco": 18.90,
+        "porcao": "1 fatia"
+      },
+      {
+        "id": 12,
+        "nome": "Brigadeiro Gourmet",
+        "descricao": "Brigadeiro cremoso feito com chocolate belga.",
+        "foto": "/imgs/pratos/brigadeiro_gourmet.jpg",
+        "preco": 5.00,
+        "porcao": "1 unidade"
       }
     ]
   }

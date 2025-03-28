@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "titulo": "Hioki Sushi",
+    "destacado": true,
+    "tipo": "Japonesa",
+    "avaliacao": 4.9,
+    "descricao": "Peça já o melhor da culinária japonesa!",
+    "capa": "/imgs/restaurantes/sushi.jpg",
+    "cardapio": [
+      {
+        "id": 1,
+        "nome": "Sushi Completo",
+        "descricao": "10 peças de sushi variados",
+        "foto": "/imgs/pratos/sushi-combo.jpg",
+        "preco": 189.90,
+        "porcao": "2 pessoas"
+      }
+    ]
+  }
+]

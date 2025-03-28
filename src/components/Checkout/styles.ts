@@ -3,16 +3,24 @@ import { cores, breakpoints } from '../../styles'
 import { fadeIn } from '../../styles/animations'
 
 export const CheckoutContainer = styled.div`
-  background-color: ${cores.branco};
+  background-color: ${cores.vermelho};
   padding: 32px;
   border-radius: 8px;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   animation: ${fadeIn} 0.3s ease-in;
+  box-sizing: border-box;
 
   h2 {
-    color: ${cores.vermelho};
+    color: ${cores.rosa};
     font-size: 24px;
     margin-bottom: 16px;
+    overflow-wrap: break-word;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 16px;
   }
 `
 
@@ -33,7 +41,7 @@ export const InputGroup = styled.div`
 
   label {
     display: block;
-    color: ${cores.vermelho};
+    color: ${cores.rosa};
     margin-bottom: 8px;
     font-weight: bold;
   }
@@ -57,42 +65,34 @@ export const Row = styled.div`
 
 export const ButtonsContainer = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 16px;
   margin-top: 32px;
-  flex-direction: column;
-
-  @media (min-width: ${breakpoints.tablet}) {
-    flex-direction: row;
-  }
+  width: 100%;
 `
 
 export const ActionButton = styled.button`
-  background-color: ${cores.vermelho};
-  color: ${cores.branco};
+  background-color: ${cores.rosa};
+  color: ${cores.vermelho};
   border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
+  padding: 12px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
   cursor: pointer;
-  font-size: 16px;
-  flex: 1;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: ${cores.vermelho};
-  }
 `
 
 export const BackButton = styled.button`
-  background-color: transparent;
+  background-color: ${cores.rosa};
   color: ${cores.vermelho};
-  border: 2px solid ${cores.vermelho};
-  padding: 12px 24px;
-  border-radius: 4px;
+  border: none;
+  padding: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  width: 100%;
   cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: ${cores.vermelho}11;
-  }
 `

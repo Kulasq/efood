@@ -1,5 +1,6 @@
+// src/components/Cart/styles.ts
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { cores, breakpoints } from '../../styles'
 
 export const CartContainer = styled.div`
   position: fixed;
@@ -8,11 +9,11 @@ export const CartContainer = styled.div`
   width: 100%;
   height: 100%;
   display: none;
-  z-index: 1000;
+  justify-content: flex-end;
+  z-index: 1;
 
   &.is-open {
     display: flex;
-    justify-content: flex-end;
   }
 `
 
@@ -22,68 +23,84 @@ export const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000;
+  opacity: 0.8;
 `
 
 export const Sidebar = styled.aside`
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
   background-color: ${cores.vermelho};
-  width: 100%;
-  max-width: 360px;
-  padding: 32px 8px;
   z-index: 1;
+  padding: 32px 8px 8px 8px;
+  max-width: 360px;
+  width: 100%;
   position: relative;
 
-  .empty-cart {
-    color: ${cores.rosa};
-    text-align: center;
+  .empty-text {
     font-size: 14px;
+    line-height: 22px;
+    color: ${cores.branco};
+    text-align: center;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 220px;
   }
 `
 
 export const CartItem = styled.li`
-  display: flex;
-  gap: 8px;
   background-color: ${cores.rosa};
+  display: flex;
   padding: 8px;
-  margin-bottom: 16px;
   position: relative;
+  margin-bottom: 16px;
+`
 
-  img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-  }
+export const ImageItem = styled.img`
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+`
 
-  div {
-    flex: 1;
+export const InfosItem = styled.div`
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
 
-    h3 {
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-
-    span {
-      font-size: 14px;
-    }
-  }
-
-  button {
-    background: none;
-    border: none;
+  h3 {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21.09px;
     color: ${cores.vermelho};
-    font-size: 16px;
-    cursor: pointer;
-    position: absolute;
-    right: 8px;
-    bottom: 8px;
+    margin-bottom: 8px;
   }
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    color: ${cores.vermelho};
+  }
+`
+
+export const DeleteItemButton = styled.button`
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: ${cores.vermelho};
+  cursor: pointer;
+  font-size: 16px;
 `
 
 export const TotalPrice = styled.div`
   display: flex;
   justify-content: space-between;
   color: ${cores.rosa};
-  margin: 24px 0;
+  margin: 40px 0 16px 0;
+  font-size: 14px;
 
   span {
     font-weight: bold;
@@ -95,7 +112,22 @@ export const CheckoutButton = styled.button`
   color: ${cores.vermelho};
   border: none;
   padding: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  display: block;
   width: 100%;
-  font-weight: bold;
   cursor: pointer;
+`
+
+export const CartStage = styled.div`
+  display: block;
+  &.is-checkout {
+    display: none;
+  }
+`
+
+export const SubmitCartButton = styled(CheckoutButton)`
+  margin-top: 16px;
 `

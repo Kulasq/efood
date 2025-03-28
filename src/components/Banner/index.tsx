@@ -1,7 +1,8 @@
+import { RestaurantType } from '../../types'
 import * as S from './styles'
 
 export type Props = {
-  restaurant: Restaurant
+  restaurant: RestaurantType
 }
 const Banner = ({ restaurant }: Props) => {
   return (

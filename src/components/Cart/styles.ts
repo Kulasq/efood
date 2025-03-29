@@ -51,10 +51,33 @@ export const Sidebar = styled.aside`
 
 export const CartItem = styled.li`
   background-color: ${cores.rosa};
+  color: ${cores.vermelho};
   display: flex;
   padding: 8px;
   position: relative;
   margin-bottom: 16px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
 `
 
 export const ImageItem = styled.img`

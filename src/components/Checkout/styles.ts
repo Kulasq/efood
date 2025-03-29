@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { cores, breakpoints } from '../../styles'
-import { fadeIn } from '../../styles/animations'
 
 export const CheckoutContainer = styled.div`
   background-color: ${cores.vermelho};
@@ -9,7 +8,6 @@ export const CheckoutContainer = styled.div`
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  animation: ${fadeIn} 0.3s ease-in;
   box-sizing: border-box;
 
   h2 {

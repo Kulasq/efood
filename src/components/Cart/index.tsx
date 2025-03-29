@@ -3,6 +3,7 @@ import * as S from './styles'
 import Checkout from '../Checkout'
 import OrderConfirmation from '../OrderConfirmation'
 import { priceFormat } from '../../utils'
+import lixeira from '../../assets/lixeira.png'
 
 type Props = {
   isOpen: boolean
@@ -51,7 +52,7 @@ const Cart = ({ isOpen, items, onClose, onRemove, onFinish }: Props) => {
                     <h3>{item.nome}</h3>
                     <span>{priceFormat(item.preco)}</span>
                   </div>
-                  <button onClick={() => onRemove(item.id)}>×</button>
+                  <button onClick={() => onRemove(item.id)}><img src={lixeira} alt="Remover item" /></button>
                 </S.CartItem>
               ))}
             </ul>

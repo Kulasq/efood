@@ -1,4 +1,3 @@
-// src/components/Button/index.tsx
 import * as S from './styles'
 
 type Props = {

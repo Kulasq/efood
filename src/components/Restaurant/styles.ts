@@ -1,4 +1,3 @@
-// src/components/Restaurant/styles.ts
 import styled from 'styled-components'
 import { cores } from '../../styles'
 

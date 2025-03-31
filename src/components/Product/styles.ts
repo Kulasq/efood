@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { cores, breakpoints } from '../../styles'
 
 export const ProductContainer = styled.div`
-  background-color: ${cores.rosa};
+  background-color: ${cores.vermelho};
   padding: 8px;
-  color: ${cores.vermelho};
+  color: ${cores.rosa};
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
@@ -36,8 +36,8 @@ export const ProductDescription = styled.p`
 `
 
 export const ProductButton = styled.button`
-  background-color: ${cores.vermelho};
-  color: ${cores.rosa};
+  background-color: ${cores.rosa};
+  color: ${cores.vermelho};
   border: none;
   padding: 4px;
   width: 100%;

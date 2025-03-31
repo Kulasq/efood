@@ -23,6 +23,38 @@
         "foto": "/imgs/pratos/carne_de_sol_com_nata.jpg",
         "preco": 32.50,
         "porcao": "2 pessoas"
+      },
+      {
+        "id": 3,
+        "nome": "Baião de Dois",
+        "descricao": "Arroz e feijão verde cozidos juntos com queijo coalho e carne seca.",
+        "foto": "/imgs/pratos/baiaodedois.jpg",
+        "preco": 25.90,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 4,
+        "nome": "Carne de Sol com Nata",
+        "descricao": "Carne de sol grelhada servida com nata e acompanhamentos.",
+        "foto": "/imgs/pratos/carne_de_sol_com_nata.jpg",
+        "preco": 32.50,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 5,
+        "nome": "Baião de Dois",
+        "descricao": "Arroz e feijão verde cozidos juntos com queijo coalho e carne seca.",
+        "foto": "/imgs/pratos/baiaodedois.jpg",
+        "preco": 25.90,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 6,
+        "nome": "Carne de Sol com Nata",
+        "descricao": "Carne de sol grelhada servida com nata e acompanhamentos.",
+        "foto": "/imgs/pratos/carne_de_sol_com_nata.jpg",
+        "preco": 32.50,
+        "porcao": "2 pessoas"
       }
     ]
   },

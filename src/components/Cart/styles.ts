@@ -43,16 +43,13 @@ export const Sidebar = styled.aside`
     color: ${cores.branco};
     text-align: center;
   }
-
-  @media (max-width: ${breakpoints.tablet}) {
-    max-width: 220px;
-  }
 `
 
 export const CartItem = styled.li`
   background-color: ${cores.rosa};
   color: ${cores.vermelho};
   display: flex;
+  gap: 8px;
   padding: 8px;
   position: relative;
   margin-bottom: 16px;
@@ -68,14 +65,13 @@ export const CartItem = styled.li`
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 8px;
+    bottom: 8px;
     right: 8px;
     padding: 4px;
 
     img {
-      width: 20px;
-      height: 20px;
-      object-fit: contain;
+      width: 16px;
+      height: 16px;
     }
   }
 `
@@ -87,7 +83,6 @@ export const ImageItem = styled.img`
 `
 
 export const InfosItem = styled.div`
-  margin-left: 8px;
   display: flex;
   flex-direction: column;
 
@@ -125,6 +120,10 @@ export const TotalPrice = styled.div`
   font-size: 14px;
 
   span {
+    font-weight: bold;
+  }
+
+  p {
     font-weight: bold;
   }
 `

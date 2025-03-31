@@ -25,9 +25,11 @@ const Header = ({ cartItemsCount, onCartClick }: Props) => {
           <img src={logo} alt="EFOOD" />
         </S.LogoLink>
         
-        <S.CartButton onClick={onCartClick}>
+        {location.pathname !== '/' && (
+          <S.CartButton onClick={onCartClick}>
           {cartItemsCount} produto(s) no carrinho
         </S.CartButton>
+        )}
       </div>
     </S.HeaderContainer>
   )

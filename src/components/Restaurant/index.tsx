@@ -1,4 +1,3 @@
-// src/components/Restaurant/index.tsx
 import * as S from './styles'
 import Button from '../Button'
 

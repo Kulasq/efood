@@ -24,7 +24,7 @@ const Header = ({ cartItemsCount, onCartClick }: Props) => {
         <S.LogoLink as={Link} to="/">
           <img src={logo} alt="EFOOD" />
         </S.LogoLink>
-
+        
         <S.CartButton onClick={onCartClick}>
           {cartItemsCount} produto(s) no carrinho
         </S.CartButton>

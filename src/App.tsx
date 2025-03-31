@@ -1,3 +1,4 @@
+import { GlobalCSS } from './styles'
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
@@ -30,10 +31,13 @@ function App() {
 
   return (
     <BrowserRouter>
+    <GlobalCSS />
     <div style={{ 
         display: 'flex', 
         flexDirection: 'column', 
-        minHeight: '100vh' 
+        minHeight: '100vh',
+        maxWidth: '100vw',
+        overflowX: 'hidden'
       }}>
       <Header 
         cartItemsCount={cartItems.length} 

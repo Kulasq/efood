@@ -4,14 +4,20 @@ import { cores, breakpoints } from '../../styles'
 export const Container = styled.div`
   padding: 56px 0 120px;
   background-color: ${cores.fundoClaro};
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    padding: 56px 24px 120px;
+  }
 `
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   width: 100%;
-  max-width: 100%;
 
   @media (max-width: ${breakpoints.desktop}) {
     grid-template-columns: 1fr 1fr;
@@ -19,5 +25,6 @@ export const List = styled.ul`
 
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 `

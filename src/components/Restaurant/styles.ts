@@ -5,7 +5,8 @@ export const RestaurantCard = styled.div`
   background-color: ${cores.branco};
   border: 1px solid ${cores.vermelho};
   position: relative;
-  max-width: 472px;
+  width: 100%;
+  height: 100%;
 
   img {
     width: 100%;

@@ -5,9 +5,11 @@ export const ProductContainer = styled.div`
   background-color: ${cores.vermelho};
   padding: 8px;
   color: ${cores.rosa};
-  max-width: 320px;
-  width: 100%;
-  margin: 0 auto;
+  width: 320px;
+  height: 338px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     cursor: pointer;
@@ -20,19 +22,23 @@ export const ProductImage = styled.img`
   width: 100%;
   height: 167px;
   object-fit: cover;
+  flex-shrink: 0;
 `
 
 export const ProductTitle = styled.h3`
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0;
+  height: 40px;
+  overflow: hidden;
 `
 
 export const ProductDescription = styled.p`
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 8px;
-  min-height: 88px;
+  height: 66px;
+  overflow: hidden;
 `
 
 export const ProductButton = styled.button`
@@ -43,6 +49,7 @@ export const ProductButton = styled.button`
   width: 100%;
   font-weight: bold;
   cursor: pointer;
+  flex-shrink: 0;
 `
 
 export const Modal = styled.div`

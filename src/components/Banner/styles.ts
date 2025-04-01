@@ -1,24 +1,26 @@
 import styled from 'styled-components'
 
-import { breakpoints, cores } from '../../styles'
+import {  cores, breakpoints } from '../../styles'
 
 export const Container = styled.div`
   height: 280px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
+
   .container {
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 32px;
     z-index: 1;
-
-    @media (max-width: ${breakpoints.tablet}) {
-      display: block;
-      padding: 0 10px;
-      height: 100%;
-    }
   }
+
   &::after {
     position: absolute;
     top: 0;
@@ -33,11 +35,19 @@ export const Tipo = styled.p`
   color: ${cores.branco};
   font-size: 32px;
   font-weight: 100;
-  padding-top: 25px;
+  padding-top: 24px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    padding-left: 24px;
+  }
 `
 export const Titulo = styled.p`
   color: ${cores.branco};
   font-size: 32px;
   font-weight: 900;
-  padding-top: 156.5px;
+  padding-top: 156px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    padding-left: 24px;
+  }
 `

@@ -1,5 +1,6 @@
 import * as S from './styles'
 import Button from '../Button'
+import star from '../../assets/estrela.png'
 
 type Props = {
   id: number
@@ -31,7 +32,7 @@ const Restaurant = ({
         <h3>{titulo}</h3>
         <div>
           <span>{avaliacao}</span>
-          <span>★</span>
+          <span><img src={star} alt="estrela" /></span>
         </div>
       </S.TitleContainer>
       <p>{descricao}</p>

@@ -17,16 +17,16 @@ export const ButtonLink = styled(Link)`
   background-color: ${cores.vermelho};
   color: ${cores.rosa};
   border: none;
-  padding: 8px 16px;
+  padding: 6px 4px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  width: 100%;
+  width: 82px;
   text-align: center;
-  box-sizing: border-box; // Adicione esta linha
-  white-space: nowrap; // Impede que o texto quebre em várias linhas
+  box-sizing: border-box;
+  white-space: nowrap;
 
   &:hover {
     background-color: ${cores.vermelho}CC;

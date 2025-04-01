@@ -48,11 +48,16 @@ export const TitleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  img {
+    height: 21px;
+    gap: 8px;
+  }
+
   div {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
   }
 `

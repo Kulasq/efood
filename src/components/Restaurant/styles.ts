@@ -3,15 +3,15 @@ import { cores } from '../../styles'
 
 export const RestaurantCard = styled.div`
   background-color: ${cores.branco};
-  border: 1px solid ${cores.vermelho};
   position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 472px;
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 217px;
     object-fit: cover;
+    display: block;
   }
 `
 
@@ -32,6 +32,8 @@ export const Tag = styled.span`
 `
 
 export const InfoContainer = styled.div`
+  border: 1px solid ${cores.vermelho};
+  border-top: none;
   padding: 8px;
   color: ${cores.vermelho};
 

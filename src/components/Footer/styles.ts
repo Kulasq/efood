@@ -31,6 +31,6 @@ export const Section = styled.p`
   max-width: 480px;
   width: 100%;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 400;
   color: ${cores.vermelho};
 `

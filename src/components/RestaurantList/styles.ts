@@ -6,7 +6,6 @@ export const Container = styled.div`
   background-color: ${cores.fundoClaro};
   max-width: 1024px;
   margin: 0 auto;
-  width: 100%;
 
   @media (max-width: ${breakpoints.desktop}) {
     padding: 56px 24px 120px;
@@ -15,16 +14,21 @@ export const Container = styled.div`
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(2, 472px);
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 48px;
   width: 100%;
 
   @media (max-width: ${breakpoints.desktop}) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    max-width: 472px;
+    margin: 0 auto;
+    gap: 32px;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    max-width: 100%;
+    padding: 0 16px;
   }
 `

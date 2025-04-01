@@ -5,7 +5,7 @@
     "destacado": true,
     "tipo": "Nordestina",
     "avaliacao": 4.8,
-    "descricao": "Especializado em culinária típica do nordeste brasileiro.",
+    "descricao": "O Sabor Nordestino traz a autenticidade da culinária do sertão direto para sua mesa! Delicie-se com carne de sol suculenta, baião de dois cremoso e sobremesas regionais como o bolo de rolo. Pratos preparados com tempero caseiro e ingredientes frescos, entregues com todo sabor do Nordeste. Peça já sua experiência nordestina!",
     "capa": "/imgs/restaurantes/restaurante_nordestino.jpg",
     "cardapio": [
       {
@@ -64,8 +64,8 @@
     "destacado": false,
     "tipo": "Italiana",
     "avaliacao": 4.7,
-    "descricao": "Autêntica cozinha italiana com massas artesanais.",
-    "capa": "/imgs/restaurantes/cantina_italiana.jpg",
+    "descricao": "A Cantina Italiana leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!",
+    "capa": "/imgs/restaurantes/cantina_italiana.png",
     "cardapio": [
       {
         "id": 3,
@@ -91,7 +91,7 @@
     "destacado": true,
     "tipo": "Japonesa",
     "avaliacao": 4.9,
-    "descricao": "O melhor da culinária japonesa com ingredientes frescos.",
+    "descricao": "O Sushi Express traz a precisão da culinária japonesa para seu lar! Saboreie sashimis frescos, temakis crocantes e pratos quentes como o yakissoba. Peças preparadas por mestres sushi chefs com peixes selecionados. Entrega premium que mantém a qualidade dos pratos. Domingueira? Peça já!",
     "capa": "/imgs/restaurantes/sushi_express.jpg",
     "cardapio": [
       {
@@ -118,7 +118,7 @@
     "destacado": false,
     "tipo": "Pizza",
     "avaliacao": 4.6,
-    "descricao": "Pizzas artesanais feitas com ingredientes de alta qualidade.",
+    "descricao": "La Pizzeria: autêntica pizza napolitana no seu lar! Massa fermentada naturalmente, ingredientes premium e forno a lenha virtual. Desde clássicas Margheritas até criações gourmet, cada pizza é uma viagem à Itália. Entrega especial mantém o crocante. Hora da pizza? Peça já!",
     "capa": "/imgs/restaurantes/la_pizzeria.jpg",
     "cardapio": [
       {
@@ -145,7 +145,7 @@
     "destacado": true,
     "tipo": "Hamburgueria",
     "avaliacao": 4.8,
-    "descricao": "Hambúrgueres artesanais grelhados no fogo.",
+    "descricao": "A Burger House eleva o conceito de hambúrguer artesanal! Carnes suculentas aged beef, pães caseiros assados diariamente e combinações ousadas. Monte seu burger ou escolha nossas assinaturas premiadas. Delivery rápido que mantém o crocante do bacon. Fome de burger? Peça já!",
     "capa": "/imgs/restaurantes/burger_house.jpg",
     "cardapio": [
       {
@@ -172,7 +172,7 @@
     "destacado": false,
     "tipo": "Confeitaria",
     "avaliacao": 4.7,
-    "descricao": "Os melhores doces e sobremesas para adoçar seu dia.",
+    "descricao": "Doces & Cia: sobremesas que transformam momentos! Bolos decorados, tortas premium e docinhos finos feitos com chocolates belgas. Encomendas especiais para datas comemorativas ou delivery rápido para desejos repentinos. Adoce seu dia - peça já sua tentação doce!",
     "capa": "/imgs/restaurantes/doces_cia.jpg",
     "cardapio": [
       {

@@ -85,11 +85,13 @@ export const ModalContent = styled.div`
   display: flex;
   gap: 24px;
   max-width: 1024px;
-  width: 100%;
-  margin: 0 24px;
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  transform: translateX(8px);
 
   > div {
     color: ${cores.branco};
+    flex: 1;
 
     h3 {
       font-size: 24px;
@@ -105,7 +107,8 @@ export const ModalContent = styled.div`
 
   @media (max-width: ${breakpoints.tablet}) {
     flex-direction: column;
-    padding: 16px;
+    padding: 24px;
+    width: calc(100% - 32px);
   }
 `
 
@@ -126,7 +129,7 @@ export const AddButton = styled.button`
   padding: 8px 16px;
   font-weight: bold;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   margin-top: 16px;
 `
 
@@ -136,7 +139,7 @@ export const CloseButton = styled.button`
   right: 8px;
   background: none;
   border: none;
-  color: ${cores.branco};
-  font-size: 24px;
   cursor: pointer;
+  display: block;
+  height: 16px;
 `

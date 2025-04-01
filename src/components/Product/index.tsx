@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import * as S from './styles'
 import { priceFormat } from '../../utils'
+import close from '../../assets/close.png'
 
 type Props = {
   id: number
@@ -40,7 +41,7 @@ const Product = ({ id, nome, descricao, foto, preco, porcao, onAdd }: Props) => 
               Adicionar ao carrinho - {priceFormat(preco)}
             </S.AddButton>
           </div>
-          <S.CloseButton onClick={() => setShowModal(false)}>×</S.CloseButton>
+          <S.CloseButton onClick={() => setShowModal(false)}><img src={close} alt="close" /></S.CloseButton>
         </S.ModalContent>
         <div className="overlay" onClick={() => setShowModal(false)} />
       </S.Modal>

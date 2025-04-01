@@ -3,7 +3,7 @@ import { cores, breakpoints } from '../../styles'
 
 export const CheckoutContainer = styled.div`
   background-color: ${cores.vermelho};
-  padding: 32px;
+  padding-top: 32px;
   border-radius: 8px;
   width: 100%;
   max-width: 800px;
@@ -18,7 +18,7 @@ export const CheckoutContainer = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 16px;
+    padding-top: 16px;
   }
 `
 
@@ -48,7 +48,7 @@ export const InputGroup = styled.div`
     width: 100%;
     padding: 8px;
     border: 2px solid ${cores.vermelho};
-    border-radius: 4px;
+    background-color: ${cores.rosa}
   }
 `
 

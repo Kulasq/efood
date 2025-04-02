@@ -94,8 +94,9 @@ export const ModalContent = styled.div`
     flex: 1;
 
     h3 {
-      font-size: 24px;
+      font-size: 18px;
       margin-bottom: 16px;
+      font-weight: 900;
     }
 
     p {
@@ -105,10 +106,15 @@ export const ModalContent = styled.div`
     }
   }
 
+  @media (max-width: ${breakpoints.desktop}) {
+    transform: translateX(0px);
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     flex-direction: column;
     padding: 24px;
-    width: calc(100% - 32px);
+    width: calc(90% - 32px);
+    transform: translateX(0px);
   }
 `
 

@@ -3,7 +3,6 @@ import { cores, breakpoints } from '../../styles'
 
 export const CheckoutContainer = styled.div`
   background-color: ${cores.vermelho};
-  padding-top: 32px;
   border-radius: 8px;
   width: 100%;
   max-width: 800px;
@@ -12,9 +11,10 @@ export const CheckoutContainer = styled.div`
 
   h2 {
     color: ${cores.rosa};
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 16px;
     overflow-wrap: break-word;
+    font-weight: 700;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
@@ -23,11 +23,13 @@ export const CheckoutContainer = styled.div`
 `
 
 export const DeliverySection = styled.div`
-  padding-bottom: 32px;
+  padding-bottom: 16px;
 `
 
 export const PaymentSection = styled.div`
-  padding-top: 32px;
+  padding-top: 16px;
+
+  
 `
 
 export const Section = styled.section`
@@ -35,7 +37,8 @@ export const Section = styled.section`
 `
 
 export const InputGroup = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
 
   label {
     display: block;
@@ -54,18 +57,29 @@ export const InputGroup = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 34px;
+  `
+  
+  export const RowPay = styled.div`
+    display: flex;
+    gap: 30px;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    flex-direction: column;
+  > div:first-child {
+    flex: 2;
+    min-width: 228px;
   }
-`
+
+  > div:last-child {
+    flex: 1; 
+    max-width: 87px;
+  }
+  `
 
 export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 32px;
+  gap: 8px;
+  margin-top: 24px;
   width: 100%;
 `
 
@@ -73,7 +87,7 @@ export const ActionButton = styled.button`
   background-color: ${cores.rosa};
   color: ${cores.vermelho};
   border: none;
-  padding: 12px;
+  padding: 4px;
   font-weight: 700;
   text-align: center;
   font-size: 14px;
@@ -85,7 +99,7 @@ export const BackButton = styled.button`
   background-color: ${cores.rosa};
   color: ${cores.vermelho};
   border: none;
-  padding: 12px;
+  padding: 4px;
   font-weight: 700;
   text-decoration: none;
   text-align: center;

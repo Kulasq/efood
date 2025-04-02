@@ -9,7 +9,6 @@ export const ConfirmationContainer = styled.div`
     color: ${cores.rosa};
     font-size: 16px;
     margin-bottom: 16px;
-    padding-top: 32px;
     font-weight: 700;
   }
 `
@@ -29,7 +28,6 @@ export const ConfirmationButton = styled.button`
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
-  margin-top: 16px;
   width: 100%;
 
   &:hover {

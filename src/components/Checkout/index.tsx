@@ -55,7 +55,7 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
       <form onSubmit={handleContinue}>
         {step === 'delivery' && (
           <S.DeliverySection>
-            <h2>Dados de Entrega</h2>
+            <h2>Entrega</h2>
             
             <S.InputGroup>
               <label>Quem irá receber</label>
@@ -142,7 +142,7 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
               />
             </S.InputGroup>
 
-            <S.Row>
+            <S.RowPay>
               <S.InputGroup>
                 <label>Número do cartão</label>
                 <IMaskInput
@@ -160,11 +160,11 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
                   onAccept={(value) => setFormData({...formData, cvv: value})}
                 />
               </S.InputGroup>
-            </S.Row>
+            </S.RowPay>
 
             <S.Row>
               <S.InputGroup>
-                <label>Mês de expiração</label>
+                <label>Mês de vencimento</label>
                 <IMaskInput
                   mask="00"
                   value={formData.expMonth}
@@ -173,7 +173,7 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
               </S.InputGroup>
 
               <S.InputGroup>
-                <label>Ano de expiração</label>
+                <label>Ano de vencimento</label>
                 <IMaskInput
                   mask="00"
                   value={formData.expYear}

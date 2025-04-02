@@ -82,6 +82,38 @@
         "foto": "/imgs/pratos/lasagna_bolognese.jpg",
         "preco": 34.00,
         "porcao": "2 pessoas"
+      },
+      {
+        "id": 3,
+        "nome": "Spaghetti Carbonara",
+        "descricao": "Massa com molho cremoso de ovos, queijo parmesão e pancetta.",
+        "foto": "/imgs/pratos/spaghetti_carbonara.jpg",
+        "preco": 29.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 4,
+        "nome": "Lasagna alla Bolognese",
+        "descricao": "Camadas de massa intercaladas com molho bolonhesa e queijo.",
+        "foto": "/imgs/pratos/lasagna_bolognese.jpg",
+        "preco": 34.00,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 3,
+        "nome": "Spaghetti Carbonara",
+        "descricao": "Massa com molho cremoso de ovos, queijo parmesão e pancetta.",
+        "foto": "/imgs/pratos/spaghetti_carbonara.jpg",
+        "preco": 29.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 4,
+        "nome": "Lasagna alla Bolognese",
+        "descricao": "Camadas de massa intercaladas com molho bolonhesa e queijo.",
+        "foto": "/imgs/pratos/lasagna_bolognese.jpg",
+        "preco": 34.00,
+        "porcao": "2 pessoas"
       }
     ]
   },
@@ -94,6 +126,38 @@
     "descricao": "O Sushi Express traz a precisão da culinária japonesa para seu lar! Saboreie sashimis frescos, temakis crocantes e pratos quentes como o yakissoba. Peças preparadas por mestres sushi chefs com peixes selecionados. Entrega premium que mantém a qualidade dos pratos. Domingueira? Peça já!",
     "capa": "/imgs/restaurantes/sushi_express.jpg",
     "cardapio": [
+      {
+        "id": 5,
+        "nome": "Combinado de Sushi",
+        "descricao": "12 peças de sushi e sashimi variados.",
+        "foto": "/imgs/pratos/combinado_sushi.jpg",
+        "preco": 42.90,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 6,
+        "nome": "Yakissoba",
+        "descricao": "Massa oriental com legumes e carne ao molho shoyu.",
+        "foto": "/imgs/pratos/yakissoba.jpg",
+        "preco": 27.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 5,
+        "nome": "Combinado de Sushi",
+        "descricao": "12 peças de sushi e sashimi variados.",
+        "foto": "/imgs/pratos/combinado_sushi.jpg",
+        "preco": 42.90,
+        "porcao": "2 pessoas"
+      },
+      {
+        "id": 6,
+        "nome": "Yakissoba",
+        "descricao": "Massa oriental com legumes e carne ao molho shoyu.",
+        "foto": "/imgs/pratos/yakissoba.jpg",
+        "preco": 27.90,
+        "porcao": "1 pessoa"
+      },
       {
         "id": 5,
         "nome": "Combinado de Sushi",
@@ -136,6 +200,38 @@
         "foto": "/imgs/pratos/pizza_quatro_queijos.jpg",
         "preco": 49.90,
         "porcao": "4 pessoas"
+      },
+      {
+        "id": 7,
+        "nome": "Pizza Margherita",
+        "descricao": "Molho de tomate, mussarela de búfala e manjericão.",
+        "foto": "/imgs/pratos/pizza_margherita.jpg",
+        "preco": 45.00,
+        "porcao": "4 pessoas"
+      },
+      {
+        "id": 8,
+        "nome": "Pizza Quatro Queijos",
+        "descricao": "Mussarela, gorgonzola, parmesão e provolone.",
+        "foto": "/imgs/pratos/pizza_quatro_queijos.jpg",
+        "preco": 49.90,
+        "porcao": "4 pessoas"
+      },
+      {
+        "id": 7,
+        "nome": "Pizza Margherita",
+        "descricao": "Molho de tomate, mussarela de búfala e manjericão.",
+        "foto": "/imgs/pratos/pizza_margherita.jpg",
+        "preco": 45.00,
+        "porcao": "4 pessoas"
+      },
+      {
+        "id": 8,
+        "nome": "Pizza Quatro Queijos",
+        "descricao": "Mussarela, gorgonzola, parmesão e provolone.",
+        "foto": "/imgs/pratos/pizza_quatro_queijos.jpg",
+        "preco": 49.90,
+        "porcao": "4 pessoas"
       }
     ]
   },
@@ -163,6 +259,38 @@
         "foto": "/imgs/pratos/barbecue_bacon_burger.jpg",
         "preco": 29.90,
         "porcao": "1 pessoa"
+      },
+      {
+        "id": 9,
+        "nome": "Cheeseburger Clássico",
+        "descricao": "Pão, carne, queijo, alface, tomate e maionese da casa.",
+        "foto": "/imgs/pratos/cheeseburger.jpg",
+        "preco": 24.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 10,
+        "nome": "Barbecue Bacon Burger",
+        "descricao": "Hambúrguer artesanal com bacon e molho barbecue.",
+        "foto": "/imgs/pratos/barbecue_bacon_burger.jpg",
+        "preco": 29.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 9,
+        "nome": "Cheeseburger Clássico",
+        "descricao": "Pão, carne, queijo, alface, tomate e maionese da casa.",
+        "foto": "/imgs/pratos/cheeseburger.jpg",
+        "preco": 24.90,
+        "porcao": "1 pessoa"
+      },
+      {
+        "id": 10,
+        "nome": "Barbecue Bacon Burger",
+        "descricao": "Hambúrguer artesanal com bacon e molho barbecue.",
+        "foto": "/imgs/pratos/barbecue_bacon_burger.jpg",
+        "preco": 29.90,
+        "porcao": "1 pessoa"
       }
     ]
   },
@@ -175,6 +303,38 @@
     "descricao": "Doces & Cia: sobremesas que transformam momentos! Bolos decorados, tortas premium e docinhos finos feitos com chocolates belgas. Encomendas especiais para datas comemorativas ou delivery rápido para desejos repentinos. Adoce seu dia - peça já sua tentação doce!",
     "capa": "/imgs/restaurantes/doces_cia.jpg",
     "cardapio": [
+      {
+        "id": 11,
+        "nome": "Bolo Red Velvet",
+        "descricao": "Massa aveludada vermelha com recheio de cream cheese.",
+        "foto": "/imgs/pratos/red_velvet.jpg",
+        "preco": 18.90,
+        "porcao": "1 fatia"
+      },
+      {
+        "id": 12,
+        "nome": "Brigadeiro Gourmet",
+        "descricao": "Brigadeiro cremoso feito com chocolate belga.",
+        "foto": "/imgs/pratos/brigadeiro_gourmet.jpg",
+        "preco": 5.00,
+        "porcao": "1 unidade"
+      },
+      {
+        "id": 11,
+        "nome": "Bolo Red Velvet",
+        "descricao": "Massa aveludada vermelha com recheio de cream cheese.",
+        "foto": "/imgs/pratos/red_velvet.jpg",
+        "preco": 18.90,
+        "porcao": "1 fatia"
+      },
+      {
+        "id": 12,
+        "nome": "Brigadeiro Gourmet",
+        "descricao": "Brigadeiro cremoso feito com chocolate belga.",
+        "foto": "/imgs/pratos/brigadeiro_gourmet.jpg",
+        "preco": 5.00,
+        "porcao": "1 unidade"
+      },
       {
         "id": 11,
         "nome": "Bolo Red Velvet",

@@ -119,10 +119,10 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
 
             <S.ButtonsContainer>
               <S.ActionButton type="submit">
-                Continuar para Pagamento
+                Continuar com o Pagamento
               </S.ActionButton>
               <S.BackButton type="button" onClick={onBack}>
-                Voltar para Carrinho
+                Voltar para o Carrinho
               </S.BackButton>
             </S.ButtonsContainer>
           </S.DeliverySection>
@@ -130,7 +130,7 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
 
         {step === 'payment' && (
           <S.PaymentSection>
-            <h2>Pagamento - Valor total: {priceFormat(totalPrice)}</h2>
+            <h2>Pagamento - Valor a pagar {priceFormat(totalPrice)}</h2>
 
             <S.InputGroup>
               <label>Nome no cartão</label>
@@ -184,10 +184,10 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
 
             <S.ButtonsContainer>
               <S.ActionButton type="submit">
-                Finalizar Pedido
+                Finalizar pagamento
               </S.ActionButton>
               <S.BackButton type="button" onClick={onBack}>
-                Voltar para Entrega
+                Voltar para a edição de endereço
               </S.BackButton>
             </S.ButtonsContainer>
           </S.PaymentSection>

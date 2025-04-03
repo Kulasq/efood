@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   background-position: center;
   padding: 40px 0;
   position: relative;
-`
+  `
 
 export const HeaderContent = styled.div`
   display: flex;

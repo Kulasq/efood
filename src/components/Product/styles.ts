@@ -132,10 +132,9 @@ export const AddButton = styled.button`
   background-color: ${cores.rosa};
   color: ${cores.vermelho};
   border: none;
-  padding: 8px 16px;
+  padding: 4px 8px;
   font-weight: bold;
   cursor: pointer;
-  width: 50%;
   margin-top: 16px;
 `
 

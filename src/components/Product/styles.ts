@@ -106,6 +106,21 @@ export const ModalContent = styled.div`
     }
   }
 
+  .error {
+    color: ${cores.rosa};
+    font-weight: bold;
+    text-align: center;
+  }
+
+  ul {
+    margin: 16px 0;
+    li {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid ${cores.rosa};
+    }
+  }
+
   @media (max-width: ${breakpoints.desktop}) {
     transform: translateX(0px);
   }

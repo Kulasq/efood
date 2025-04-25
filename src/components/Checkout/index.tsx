@@ -9,9 +9,15 @@ type Props = {
   onBack: () => void
   onClose: () => void
   onFinish: (orderId: string) => void
+  items: Array<{
+    id: number
+    nome: string
+    foto: string
+    preco: number
+  }>
 }
 
-const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
+const Checkout = ({ step, totalPrice, items, onBack, onFinish }: Props) => {
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -25,12 +31,6 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
     expMonth: '',
     expYear: ''
   })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const orderId = `ORDER-${Math.random().toString(36).substr(2, 6).toUpperCase()}`
-    onFinish(orderId)
-  }
 
   const handleContinue = (e: React.FormEvent) => {
     e.preventDefault()
@@ -49,6 +49,57 @@ const Checkout = ({ step, totalPrice, onBack, onClose, onFinish }: Props) => {
       handleSubmit(e)
     }
   }
+  
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+  
+    const orderData = {
+      name: formData.name,
+      address: {
+        description: formData.address,
+        city: formData.city,
+        zipCode: formData.zipCode,
+        number: formData.number,
+        complement: formData.complement
+      },
+      payment: {
+        card: {
+          name: formData.cardName,
+          number: formData.cardNumber,
+          code: formData.cvv,
+          expires: {
+            month: formData.expMonth,
+            year: formData.expYear
+          }
+        }
+      },
+      products: items.map((item) => ({
+        id: item.id,
+        price: item.preco
+      }))
+    }
+  
+    try {
+      const response = await fetch('https://fake-api-tau.vercel.app/api/efood/checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(orderData)
+      })
+  
+      if (!response.ok) {
+        throw new Error('Erro ao enviar pedido')
+      }
+  
+      const data = await response.json()
+      onFinish(data.orderId)
+    } catch (error) {
+      alert('Ocorreu um erro ao finalizar o pedido. Tente novamente')
+      console.error(error)
+    }
+  }
+  
 
   return (
     <S.CheckoutContainer>

@@ -75,6 +75,7 @@ const Cart = ({ isOpen, items, onClose, onRemove, onFinish }: Props) => {
             onBack={() => step === 'delivery' ? setStep('cart') : setStep('delivery')}
             onClose={handleClose}
             onFinish={handleFinishOrder}
+            items={items}
           />
         )}
 

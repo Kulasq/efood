@@ -143,6 +143,7 @@ const Checkout = ({ step, totalPrice, items, onBack, onFinish }: Props) => {
                 <label>CEP</label>
                 <IMaskInput
                   mask="00.000-000"
+                  required
                   value={formData.zipCode}
                   onAccept={(value) => setFormData({...formData, zipCode: value})}
                 />
@@ -198,6 +199,7 @@ const Checkout = ({ step, totalPrice, items, onBack, onFinish }: Props) => {
                 <label>Número do cartão</label>
                 <IMaskInput
                   mask="0000 0000 0000 0000"
+                  required
                   value={formData.cardNumber}
                   onAccept={(value) => setFormData({...formData, cardNumber: value})}
                 />
@@ -207,6 +209,7 @@ const Checkout = ({ step, totalPrice, items, onBack, onFinish }: Props) => {
                 <label>CVV</label>
                 <IMaskInput
                   mask="000"
+                  required
                   value={formData.cvv}
                   onAccept={(value) => setFormData({...formData, cvv: value})}
                 />
@@ -218,6 +221,7 @@ const Checkout = ({ step, totalPrice, items, onBack, onFinish }: Props) => {
                 <label>Mês de vencimento</label>
                 <IMaskInput
                   mask="00"
+                  required
                   value={formData.expMonth}
                   onAccept={(value) => setFormData({...formData, expMonth: value})}
                 />
@@ -227,6 +231,7 @@ const Checkout = ({ step, totalPrice, items, onBack, onFinish }: Props) => {
                 <label>Ano de vencimento</label>
                 <IMaskInput
                   mask="00"
+                  required
                   value={formData.expYear}
                   onAccept={(value) => setFormData({...formData, expYear: value})}
                 />
